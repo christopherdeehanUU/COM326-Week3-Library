@@ -11,7 +11,19 @@ class Program
         Book book2 = new Book("C# Methods and Classes", "Microsoft", "55667778", 90);
 
         // Output the book information to the console
+        Console.WriteLine("Book information");
+        Console.WriteLine("----------------");
         book.DisplayInfo();
         book2.DisplayInfo();
+
+        // Create new instances of member class
+        // New members created using the member constructor in Members class
+        Member member = new Member(1, "John Smith", "1 High Street", 0790090090);
+        Member member2 = new Member(2, "Chris Deehan", "102 Garden Street", 0790490620);
+
+        Console.WriteLine("Current library members");
+        Console.WriteLine("-----------------------");
+        member.DisplayInfo();
+        member2.DisplayInfo();
     }
 }
